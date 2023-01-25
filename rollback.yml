@@ -15,7 +15,7 @@
 
     - name: Delete Apache Document Root
       file:
-        path: "/var/www/{{ http_host }}"
+        path: "/var/www/wp.com"
         state: absent
     
     - name: Rollback Apache VirtualHost
