@@ -2,6 +2,7 @@
   hosts: web
   become: yes
   #vars_files:
+    - vars/default.yml
   #  - "{{ ansible_os_family }}.yml"
 
   tasks:
@@ -15,7 +16,7 @@
 
     - name: Delete Apache Document Root
       file:
-        path: "/var/www/wp.com"
+        path: "/var/www/{{ http_host }}"
         state: absent
     
     - name: Rollback Apache VirtualHost
