@@ -1,5 +1,5 @@
 [all]
-web1 ansible_host=192.168.56.31 ansible_user=root ansible_ssh_pass=centos
+web1 ansible_host=192.168.56.32 ansible_user=root ansible_ssh_pass=centos
 
 [web]
-web1 ansible_host=192.168.56.31 ansible_user=root ansible_ssh_pass=centos
+web1 ansible_host=192.168.56.32 ansible_user=root ansible_ssh_pass=centos
