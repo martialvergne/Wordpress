@@ -13,7 +13,7 @@
  
 - name: Install PHP Extensions
   package: 
-    name: {{ item }}
+    name: "{{ item }}"
     update_cache: yes
     state: latest
   loop: "{{ php_modules }}"
