@@ -1,2 +1,5 @@
+[all]
+192.168.56.31 ansible_user=root ansible_ssh_pass=centos
+
 [web1]
 192.168.56.31 ansible_user=root ansible_ssh_pass=centos
