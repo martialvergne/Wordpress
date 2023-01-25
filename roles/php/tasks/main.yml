@@ -1,4 +1,9 @@
 ---
+- name: "Import remi GPG key."
+  rpm_key:
+    key: https://rpms.remirepo.net/RPM-GPG-KEY-remi2018
+    state: present
+
 - name: Install PHP Remi Repository
   yum: name=http://rpms.remirepo.net/enterprise/remi-release-8.rpm update_cache=yes state=latest
  
