@@ -12,5 +12,8 @@
   command: dnf module enable php:remi-7.4 -y
  
 - name: Install PHP Extensions
-  yum: name={{ item }} update_cache=yes state=latest
+  package: 
+    name: {{ item }}
+    update_cache: yes
+    state: latest
   loop: "{{ php_modules }}"
