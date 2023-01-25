@@ -2,7 +2,7 @@
 # WordPress Configuration
  
     - name: Download and unpack latest WordPress
-      unarchive:
+      ansible.builtin.unarchive:
         src: https://wordpress.org/latest.tar.gz
         dest: "/var/www/{{ http_host }}"
         remote_src: yes
