@@ -28,7 +28,6 @@
     - name: Delete MySQL Packages
       package: 
         name: "{{ item }}"
-        update_cache: yes 
         state: absent
       loop: "{{ mysql_modules }}"
 
@@ -36,7 +35,6 @@
     - name: Delete PHP Packages
       package: 
         name: "{{ item }}"
-        update_cache: yes 
         state: absent
       loop: "{{ php_modules }}"
  

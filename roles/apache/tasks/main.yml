@@ -1,8 +1,7 @@
 ---
 - name: Install HTTP Packages
   package: 
-    name: httpd 
-    update_cache: yes 
+    name: httpd  
     state: latest
  
 - name: Start httpd service

@@ -3,7 +3,6 @@
     - name: Install MySQL Packages
       package: 
         name: "{{ item }}"
-        update_cache: yes
         state: latest
       loop: "{{ mysql_modules }}"
  
