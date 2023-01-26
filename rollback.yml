@@ -31,6 +31,14 @@
         update_cache: yes 
         state: absent
       loop: [ 'mysql-server', 'php-mysqlnd', 'python3-PyMySQL' ]
+
+# MySQL Configuration
+    - name: Delete PHP Packages
+      package: 
+        name: "{{ item }}"
+        update_cache: yes 
+        state: absent
+      loop: "{{ php_modules }}"
  
 
  
