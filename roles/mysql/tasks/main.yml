@@ -7,7 +7,7 @@
       loop: "{{ mysql_modules }}"
  
     - name: Start mysqld service
-      package: 
+      service: 
         name: mysqld 
         state: started 
         enabled: yes
