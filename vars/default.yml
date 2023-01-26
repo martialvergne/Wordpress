@@ -5,8 +5,8 @@ php_modules: [ 'php', 'php-curl', 'php-gd', 'php-mbstring', 'php-xml', 'php-xmlr
 #MySQL Settings
 mysql_root_password: "centos"
 mysql_db: "wpdb"
-mysql_user: "wpuser"
-mysql_password: "password"
+mysql_user: "root"
+mysql_password: "centos"
  
 #HTTP Settings
 http_host: "wp.com"
