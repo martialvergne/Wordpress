@@ -10,7 +10,7 @@
     - name: Set MySQL root Password
       mysql_user:
         login_host: 'localhost'
-        login_user: 'user'
+        login_user: 'root'
         login_password: 'centos'
         name: 'root'
         password: '{{ mysql_root_password }}'
