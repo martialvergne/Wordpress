@@ -37,5 +37,7 @@
         - {'regexp': "define\\( 'DB_PASSWORD', '(.)+' \\);", 'line': "define( 'DB_PASSWORD', '{{mysql_password}}' );"}
      
     - name: Restart httpd service
-      systemd: name=httpd state=restarted
+      package: 
+        name: httpd 
+        state: restarted
       become: yes
